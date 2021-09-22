@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Questrial&display=swap");
+
+* {
+  --primary: #399fff;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(248, 245, 245);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 20px 40px 20px 40px;
+  background-color: #1c63e7;
+}
+
+.navbar-brand{
+margin-left: 50px;
+}
+.colloborate,
+.Logout{
+  margin-right: 50px;
+}
+
+.container {
+  padding: 30px 0 30px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+
+.cost {
+  border-radius: 5px;
+  display: flex;
+  width: 60%;
+  background: white;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cost span {
+  margin-left: 20px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+select {
+  height: 100%;
+  margin-left: 20px;
+  border-radius: 5px;
+  width: 150px;
+  border: none;
+  padding: 0 10px 0 10px;
+}
+
+
+.content {
+  display: grid;
+  margin-top: 30px;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 70px);
+}
+
+.clicks,
+.cost-card {
+  grid-row: 1 / 3;
+}
+
+.revenue,
+.conversion {
+  grid-row: 3 / 5;
+}
+
+.card {
+  padding: 16px 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(218, 211, 211, 0.5);
+  position: relative;
+}
+
+.smiley{
+ position:absolute;
+ right:20px;
+  top: 10px;
+  width: 10%;
+  }
+.url-title {
+  grid-row: 1 / 2;
+}
+
+.urlhead{
+  margin-bottom: 18px;
+}
+
+.url {
+  grid-row: 2 / 5;
+}
+
+.url-title p {
+  /* margin-top: 10px; */
+  color: grey;
+}
+
+.card h2 {
+  font-weight: 600;
+}
+
+.card > :nth-child(n) {
+  margin-top: 14px;
+}
+
+.card .number {
+  font-weight: 700;
+  /* margin-top: 16px; */
+  font-size: 24px;
+  color: #3E3CCA;
+}
+
+.increment {
+  font-weight: bold;
+  color: 	#29e011;
+}
+.decrement{
+  font-weight: bold;
+  color: #FF6C2B;
+}
+.url {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.list-item {
+  margin-top: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+
+.conversion-summary{
+  margin-bottom: 30px;
+}
+
+.bottom{
+display: flex;
+justify-content: center;
+}
+
+.buttons{
+border-radius: 10px;
+font-size: 20px;
+background-color: white;
+margin-right: 1%;
+margin-top: 5%;
+padding: 1.5%;
+}
+
+.buttons1{
+  border: 2px solid #3E3CCA;
+}
+
+.buttons2{
+  border: 2px solid #dfdddd;
+}
+
+.buttons3{
+  border: 2px solid #51ceff;
+}
+
+.l1{
+  color: #3E3CCA;
+}
+.l2{
+  color: #000000;
+}
+.l3{
+  color: #51ceff;
+}
+
+.slack{
+  width: 18px;
+  margin-right: 8.5px;
+}
+
+.facebook{
+  width: 18px;
+  margin-right: 8.5px;
+}
+
+.kc{
+  width: 18px;
+  margin-right: 8.5px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+.sr-no {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  /* text-align: center; */
+  color: var(--primary);
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 16px;
+  background: rgb(201, 245, 248);
+}
+
+@media (max-width: 450px) {
+  .content {
+    display: block;
+  }
+
+  .list-item {
+    margin: 10px 0 10px 0;
+  }
+
+  .content > :nth-child(n) {
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 70px);
+  }
+
+  .chart {
+    padding: 20px;
+  }
+
+  .clicks,
+  .revenue {
+    grid-column: 1 / 2;
+  }
+  .cost-card,
+  .conversion {
+    grid-column: 2 / 3;
+  }
+
+  .url-title {
+    margin: auto;
+    text-align: center;
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+  }
+
+  .url {
+    grid-column: 1 / 3;
+    grid-row: 6 / -1;
+  }
+
+  .content,
+  .header {
+    padding: 10px 20px;
+  }
+
+  .dropdowns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  select {
+    margin-left: 0;
+    height: 35px;
+    margin-top: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+  .cost {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+}

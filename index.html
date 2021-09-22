@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+
+    
+    <!-- unioncs Icon scout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   
+ 
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">AdHelp.io | Company Name</div>
+      <div>
+        <a class="collaborate">Collaborate</a> |
+        <a class="Logout">Logout</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="header">
+        <div class="cost">
+          <p>Daily Cost : <span>SEK 1,000</span></p>
+          <p>Projected monthly budget : <span>SEK 31,698</span></p>
+        </div>
+        <div class="dropdowns">
+          <select name="sel1" id="sel1">
+            <option value="google-ads">Google Ads</option>
+          </select>
+          <select name="sel2" id="sel2">
+            <option value="default">Select Range</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="clicks card">
+          <h3>Clicks</h3>
+          <img class="smiley" src="images/smile.svg" alt="Happy smiley" srcset="">
+          <p class="number">25,000</p>
+          <p>Yaay! <span class="increment">+5000</span> than last month</p>
+        </div>
+        <div class="cost-card card">
+          <h3>Cost</h3>
+          <img class="smiley" src="images/frown.svg" alt="Happy smiley" srcset="">
+          <p class="number">25,256</p>
+          <p>Oops! <span class="decrement">-SEK 500</span> than last month</p>
+        </div>
+        <div class="revenue card">
+          <h3>Revenue</h3>
+          <img class="smiley" src="images/meh.svg" alt="Happy smiley" srcset="">
+          <p class="number">79,963</p>
+          <p>Yaay! <span class="increment">+500</span> than last month</p>
+        </div>
+        <div class="conversion card">
+          <h3>Conversion Rate</h3>
+          <img class="smiley" src="images/meh.svg" alt="Happy smiley" srcset="">
+          <p class="number">20%</p>
+          <p>You are <span class="decrement">+SEK 50</span> than last month</p>
+        </div>
+        <div class="url-title">
+          <h3 class="urlhead">Top 3 performing Ads / URLS</h3>
+          <p>(Based on most conversion/ Clicks)</p>
+        </div>
+        <div class="url card">
+          <div class="list-item">
+            <div class="sr-no">1</div>
+            Nike Air | Sports Shoes | Summer Sale
+          </div>
+          <div class="list-item">
+            <div class="sr-no">2</div>
+
+            Nike sport | Sports Shoes female | Summer sale
+          </div>
+          <div class="list-item">
+            <div class="sr-no">3</div>
+            Nike Air Max | Men's Shoes | Summer Sale
+          </div>
+        </div>
+
+        <h2 class="conversion-summary">Conversion Summary</h2>
+      </div>
+      <div class="card chart">
+        <h2>Last 30 Days</h2>
+        <canvas id="myChart" height="100"></canvas>
+      </div>
+      <div class="bottom">
+      <button class="buttons buttons1"><img class="facebook" src="images/facebook-f.svg" alt="" srcset=""><a class="l1" href="https://facebook.com">Advertise on Facebook</a> </button>
+      <button class="buttons buttons2"><img class="slack" src="images/slack.png" alt="" srcset=""><a class="l2" href="https://slack.com">Connect to Slack</a></button>
+      <button class="buttons buttons3"><img class="kc" src="images/lightbulb.svg" alt="" srcset=""><a class="l3" href="https://Google.com">Knowledge Centre</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</html>
