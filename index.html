@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="customSelect.jquery.css">
     <title>Document</title>
 
     
@@ -29,12 +30,12 @@
           <p>Projected monthly budget : <span>SEK 31,698</span></p>
         </div>
         <div class="dropdowns">
-          <select name="sel1" id="sel1">
-            <option value="google-ads">Google Ads</option>
-          </select>
-          <select name="sel2" id="sel2">
-            <option value="default">Select Range</option>
-          </select>
+          <div>
+            <input type="hidden" class="custom-select" id="analyticsSelect" value="">
+          </div>
+          <div>
+            <input type="hidden" id="rangeSelect" value="">
+          </div>
         </div>
       </div>
 
@@ -96,6 +97,10 @@
       </div>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+  integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
+  crossorigin="anonymous"></script>
+<script src="customSelect.jquery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="main.js"></script>
 </html>

@@ -18,6 +18,25 @@ const config = {
 };
 var myChart = new Chart(document.getElementById("myChart"), config);
 
+var myOptions = [["ads", "google_ads-icon.svg", "Google Ads"]];
 
+var myTemplate =
+  "<div class='jqcs_option' data-select-value='$0' style='background-image:url(example_icons/$1);'>$2</div>";
 
-console.log("hi");
+$.customSelect({
+  identifier: "demo",
+  selector: "#analyticsSelect",
+  placeholder: "Select Analytics",
+  options: myOptions,
+  template: myTemplate,
+});
+
+var rangeOptions = [["dummy-range", "", "Dummy Range"]];
+
+$.customSelect({
+  identifier: "range",
+  selector: "#rangeSelect",
+  placeholder: "Select Range",
+  options: rangeOptions,
+  template: myTemplate,
+});
